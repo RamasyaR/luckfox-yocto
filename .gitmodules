@@ -1,0 +1,20 @@
+[submodule "poky"]
+	path = poky
+	url = git://git.yoctoproject.org/poky.git
+	branch = walnascar
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = git://git.openembedded.org/meta-openembedded
+	branch = walnascar
+[submodule "meta-arm"]
+	path = meta-arm
+	url = git://git.yoctoproject.org/meta-arm
+	branch = walnascar
+[submodule "meta-rockchip"]
+	path = meta-rockchip
+	url = git://git.yoctoproject.org/meta-rockchip
+	branch = walnascar
+[submodule "meta-rv110x"]
+	path = meta-rv110x
+	url = git@github.com:RamasyaR/meta-rv110x
+	branch = main

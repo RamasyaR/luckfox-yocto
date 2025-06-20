@@ -1,0 +1,9 @@
+build/cache
+build/downloads
+build/tmp*
+build/sstate-cache
+build/*.sock
+build/*.lock
+build/bitbake-cookerdaemon.log
+build/conf/*.txt
+build/conf/template*

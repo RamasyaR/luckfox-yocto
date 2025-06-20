@@ -1,0 +1,51 @@
+{
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/poky/bitbake/lib",
+        "${workspaceFolder}/poky/meta/lib"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/poky/bitbake/lib",
+        "${workspaceFolder}/poky/meta/lib"
+    ],
+    "files.associations": {
+        "*.conf": "bitbake",
+        "*.inc": "bitbake"
+    },
+    "bitbake.pathToBitbakeFolder": "${workspaceFolder}/poky/bitbake",
+    "bitbake.pathToEnvScript": "${workspaceFolder}/poky/oe-init-build-env",
+    "bitbake.sdkImage": "core-image-base",
+    "bitbake.pathToBuildFolder": "${workspaceFolder}/build",
+    "bitbake.parseOnSave": false,
+    "bitbake.buildConfigurations": [
+        {
+            "name": "Luckfox Pico Mini A",
+            "pathToBuildFolder": "${workspaceFolder}/build",
+            "shellEnv": {
+                "MACHINE": "luckfox-pico-mini-a",
+                "DISTRO": "luckfox"
+            }
+        },
+        {
+            "name": "Luckfox Pico Mini B",
+            "pathToBuildFolder": "${workspaceFolder}/build",
+            "shellEnv": {
+                "MACHINE": "luckfox-pico-mini-b",
+                "DISTRO": "luckfox"
+            }
+        }
+    ],
+    "VsCodeTaskButtons.tasks": [
+        {
+            "label": "$(play) Build base image",
+            "task": "Build core-image-base",
+            "tooltip": "🛠️ Start the \"build\" core-image-base"
+        },
+        {
+            "label": "$(play) Build minimal image",
+            "task": "Build core-image-minimal",
+            "tooltip": "🛠️ Start the \"build\" core-image-minimal"
+        }
+    ],
+    "bitbake.disableConfigModification": true,
+    "bitbake.disableDevtoolDebugBuild": true,
+}
