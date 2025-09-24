@@ -17,4 +17,4 @@
 [submodule "meta-rv110x"]
 	path = meta-rv110x
 	url = git@github.com:RamasyaR/meta-rv110x
-	branch = main
+	branch = walnascar
