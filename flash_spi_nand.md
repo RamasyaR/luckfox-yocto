@@ -1,6 +1,6 @@
 
 
-# This is a small summary regarding the Luckfox Pico Mini B rv1106 SPI NAND flashing.
+# This is a small summary regarding the Luckfox Pico Mini B rv1103 SPI NAND flashing.
 
 ## Step 1
 
