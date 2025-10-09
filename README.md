@@ -23,5 +23,5 @@ This is an example and starting point for working with the [meta-rv110x](https:/
 6. Find the build result in the `build/tmp/deploy/images` directory
 7. Copy image
     - SDCARD: Use `bmaptool` to copy the generated .wic file to the SD card
-    - NAND: TODO
+    - NAND: [Tutorial here](/flash_spi_nand.md)
 8. Boot your device
