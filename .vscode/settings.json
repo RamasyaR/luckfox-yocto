@@ -18,19 +18,21 @@
     "bitbake.parseOnSave": false,
     "bitbake.buildConfigurations": [
         {
-            "name": "Luckfox Pico Mini A",
+            "name": "Luckfox Pico Mini SDCARD",
             "pathToBuildFolder": "${workspaceFolder}/build",
             "shellEnv": {
-                "MACHINE": "luckfox-pico-mini-a",
-                "DISTRO": "luckfox"
+                "MACHINE": "luckfox-pico-mini",
+                "DISTRO": "luckfox",
             }
         },
         {
-            "name": "Luckfox Pico Mini B",
+            "name": "Luckfox Pico Mini NAND",
             "pathToBuildFolder": "${workspaceFolder}/build",
             "shellEnv": {
-                "MACHINE": "luckfox-pico-mini-b",
-                "DISTRO": "luckfox"
+                "MACHINE": "luckfox-pico-mini",
+                "DISTRO": "luckfox",
+                "BB_ENV_PASSTHROUGH_ADDITIONS": "${BB_ENV_PASSTHROUGH_ADDITIONS} RV_SPI_NAND_STORAGE",
+                "RV_SPI_NAND_STORAGE": "1"
             }
         }
     ],
